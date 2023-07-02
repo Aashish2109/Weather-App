@@ -1,84 +1,116 @@
-body{
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
     background-color: blueviolet;
 }
-.mainheading{
-    color:rgb(141, 39, 39);
+
+.mainheading {
+    color: rgb(141, 39, 39);
     text-align: center;
     margin-top: 2rem;
+    animation: blink 2s infinite;
+    
 }
-.card
-{
-    width: 90%;
-    max-width: 30rem;
-    background:linear-gradient(270deg,#7dca5e,#8a5478) ;
-    color:aqua;
-    margin: 3rem auto 0;
+
+.err {
+    text-align: center;
+    display: none;
+}
+
+.card {
+    max-width: 32rem;
+    background: linear-gradient(270deg, #7dca5e, #8a5478);
+    color: rgb(116, 15, 22);
+    margin: 1rem auto 2rem ;
     border-radius: 2rem;
+    
     padding: 2rem 2rem;
     text-align: center;
+    box-shadow:-2rem 1rem 1rem ;
 }
-.search
-{
+
+.search {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.search input{
+
+.search input {
     height: 2rem;
     width: 15rem;
     border-radius: 2rem;
     border: #6ede42;
     text-align: center;
-    margin-right:0.5rem;
+    margin-right: 0.5rem;
 
 }
-.search button{
+
+.search button {
     border-radius: 40%;
-    border-width:0.3rem;
+    border-width: 0.3rem;
 }
-.search button img{
+
+.search button img {
     height: 1.3rem;
     width: 1.3rem;
-    
+
 }
 
-.weather-icon
-{
+.weather-icon {
     width: 10rem;
-    margin-top:3rem;
+    margin-top: 3rem;
 }
-.weather h1{
+
+.weather h1 {
     font-size: 4rem;
     font-weight: 400;
 }
-.weather h2{
+
+.weather h2 {
     font-size: 4rem;
     font-weight: 400;
-    margin-top:2rem ;
+    margin-top: 2rem;
 }
-.details
-{
+
+.details {
     display: flex;
     justify-content: space-around;
     font-size: 1.5rem;
     font-weight: 300;
+
 }
-.col
-{
+
+.col {
     display: flex;
     align-items: center;
     text-align: left;
+    padding: 0 0.1rem;
+    border: 0.2rem solid rgb(19, 20, 19);
+    color: #4010de;
 }
-.col img{
+
+.col img {
     width: 6rem;
     margin-right: 1rem;
     margin-left: 1rem;
 }
-.humidity
-{
+
+.humidity {
     font-size: 2rem;
 }
-.wind
-{
+
+.wind {
     font-size: 2rem;
 }
