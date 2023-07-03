@@ -15,27 +15,34 @@
 body {
     background-color: blueviolet;
 }
-
-.mainheading {
+.mainheading{
     color: rgb(141, 39, 39);
     text-align: center;
+    align-items: center;
     margin-top: 2rem;
     animation: blink 2s infinite;
-    
+    text-shadow: 0.2rem 0.2rem 2rem rgb(253, 106, 8);
 }
-
+.mainweather
+{
+    border:0.2rem solid black;
+    margin: 1rem auto 1rem 13.7rem;
+    width:12rem;
+    padding: 0;
+    box-shadow:0 0 0.9rem 0.2rem #031715;
+}
 .err {
     text-align: center;
     display: none;
 }
 
 .card {
-    max-width: 32rem;
+    max-width: 40rem;
+    max-height: fit-content;
     background: linear-gradient(270deg, #7dca5e, #8a5478);
     color: rgb(116, 15, 22);
     margin: 1rem auto 2rem ;
     border-radius: 2rem;
-    
     padding: 2rem 2rem;
     text-align: center;
     box-shadow:-2rem 1rem 1rem ;
@@ -54,7 +61,6 @@ body {
     border: #6ede42;
     text-align: center;
     margin-right: 0.5rem;
-
 }
 
 .search button {
@@ -65,44 +71,94 @@ body {
 .search button img {
     height: 1.3rem;
     width: 1.3rem;
-
 }
-
+.search input:hover {
+    box-shadow:0 0 0.9rem 0.2rem #de4242;
+}
+.search img:hover{
+    box-shadow:0 0 0.9rem 0.2rem #de4242;
+}
 .weather-icon {
     width: 10rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
-
-.weather h1 {
-    font-size: 4rem;
+.weather p{
+    font-size: 2rem;
     font-weight: 400;
+}
+.weather h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    margin-top: -1.5rem;
 }
 
 .weather h2 {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 400;
-    margin-top: 2rem;
+    margin-top: -1.6rem;
 }
-
+.weather p{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.weather img{
+    box-shadow:0 0 0.9rem 0.2rem #031715;
+}
+.weather-type{
+  margin-top: -2rem;
+}
 .details {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 300;
+}
+.details1 {
     display: flex;
     justify-content: space-around;
     font-size: 1.5rem;
     font-weight: 300;
-
+    margin-top: 1rem;
 }
-
 .col {
     display: flex;
     align-items: center;
     text-align: left;
-    padding: 0 0.1rem;
     border: 0.2rem solid rgb(19, 20, 19);
-    color: #4010de;
+    box-shadow:0.1rem -0.1rem 1rem rgb(6, 49, 6);
 }
-
 .col img {
     width: 6rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.col p{
+    margin-right: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.col1 {
+    display: flex;
+    align-items:center;
+    text-align: left;
+    border: 0.2rem solid rgb(19, 20, 19);
+    box-shadow:-0.1rem 0.1rem 1rem rgb(6, 49, 6);
+}
+.col1 img {
+    width: 6rem;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+}
+.col1 p{
+    margin-right: 0.5rem;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 400;
+    
+}
+.col1 img.cloudscover
+{
+    height:6rem;
     margin-right: 1rem;
     margin-left: 1rem;
 }
@@ -114,3 +170,4 @@ body {
 .wind {
     font-size: 2rem;
 }
+
