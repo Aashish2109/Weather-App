@@ -31,10 +31,13 @@ async function fetchWeather(city) {
                 weatherIcon.src = "images/clear.png";
             }
             else if (data.weather[0].main == "Rain") {
-                weatherIcon.src = "images/rain.png";
+                weatherIcon.src = "images/rain.jpeg";
             }
             else if (data.weather[0].main == "Drizzle") {
                 weatherIcon.src = "images/drizzle.png";
+            }
+            else if (data.weather[0].main == "Haze") {
+                weatherIcon.src = "images/haze.png";
             }
             else {
                 weatherIcon.src = "images/mist.png";
@@ -49,4 +52,10 @@ async function fetchWeather(city) {
 searchBtn.addEventListener("click", () => {
     fetchWeather(searchBox.value);
 })
+searchBox.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault(); // Prevent the default form submission
+        fetchWeather(searchBox.value);
+    }
+});
 
