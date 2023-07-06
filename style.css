@@ -43,7 +43,7 @@ body {
 }
 
 .card {
-    max-width: 40rem;
+    max-width:45rem;
     max-height: fit-content;
     background: linear-gradient(270deg, #7dca5e, #8a5478);
     color: rgb(116, 15, 22);
@@ -154,9 +154,9 @@ body {
 
 .col p {
     margin-right: 0.5rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    width:8rem;
+    width:9rem;
 }
 
 .col1 {
@@ -177,9 +177,9 @@ body {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     text-align: left;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    width:8rem;
+    width:9rem;
 
 }
 
@@ -212,13 +212,15 @@ body {
     }
 
     .mainweather {
-        width: 60%;
+        width: 65%;
     }
     .col p{
-        width:8rem;
+        width:9rem;
+        font-size: 1.4rem;
     }
 
     .col1 p{
-        width:8rem;
+        width:9rem;
+        font-size: 1.4rem;
     }
 }
