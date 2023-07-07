@@ -32,8 +32,8 @@ body {
 .mainweather {
     border: 0.2rem solid black;
     margin: 1rem auto 1rem auto;
-    width: 40%;
-    padding: 0;
+    width:fit-content;
+    padding: 0 1rem;
     box-shadow: 0 0 0.9rem 0.2rem #031715;
 }
 
@@ -222,5 +222,10 @@ body {
     .col1 p{
         width:9rem;
         font-size: 1.4rem;
+    }
+    .mainweather{
+        width: fit-content;
+        padding: 0 0.1rem;
+        margin: 1rem auto 1rem auto;
     }
 }
